@@ -186,6 +186,10 @@ export const collections: BookCollection[] = [
                 cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PrideAndPrejudiceTitlePage.jpg/330px-PrideAndPrejudiceTitlePage.jpg",
             },
             {
+                title: "Khuda aur Mohabbat",
+                cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348574003i/16046385.jpg",
+            },
+            {
                 title: "If I Stay",
                 cover: "https://upload.wikimedia.org/wikipedia/en/b/b7/If_i_stay_book_cover.jpg",
             },
