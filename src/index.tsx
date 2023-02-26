@@ -1,10 +1,10 @@
 /**
- * Books Read
+ * Books and Games
  *
- * A collection of books I've read.
+ * A collection of books I've read and games I've played.
  *
  * @author Afaan Bilal https://afaan.dev
- * @link   https://afaan.dev/books-read
+ * @link   https://afaan.dev/books-and-games
  */
 
 /* @refresh reload */
