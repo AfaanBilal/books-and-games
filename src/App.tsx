@@ -16,8 +16,8 @@ import { games } from "./games";
 const App: Component = () => {
     return (
         <div class="text-white font-mono py-8">
-            <div class="w-full flex flex-wrap">
-                <div class="flex-1 md:w-1/2">
+            <div class="flex flex-wrap">
+                <div class="lg:w-1/2">
                     <div class="text-center text-5xl">Books Read</div>
                     <div class="text-center my-4 text-xl pb-4 border-b border-b-slate-700">
                         A list of books I've read
@@ -25,13 +25,13 @@ const App: Component = () => {
                     </div>
                     <For each={collections}>{c => <BookCollection {...c} />}</For>
                 </div>
-                <div class="flex-1 md:w-1/2">
-                    <div class="text-center text-5xl">Games Played</div>
+                <div class="lg:w-1/2">
+                    <div class="text-center text-5xl mt-4 lg:mt-0">Games Played</div>
                     <div class="text-center my-4 text-xl pb-4 border-b border-b-slate-700">
                         A list of games I've played
                         <span class="ml-2 p-2 text-lg rounded-full bg-slate-700">{games.length}</span>
                     </div>
-                    <div class="w-full px-8 grid grid-cols-2 gap-x-16 gap-y-4">
+                    <div class="w-full px-8 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-4">
                         <For each={games}>{g => <GameView game={g} />}</For>
                     </div>
                 </div>
