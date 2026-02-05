@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+    color: #f8fafc;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+}

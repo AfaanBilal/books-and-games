@@ -12,9 +12,20 @@ import { Book } from "../books";
 
 const BookView: Component<{ book: Book }> = (props) => {
     return (
-        <div class="min-w-[250px] max-w-[250px] py-6 flex flex-col items-center justify-between gap-4 border rounded-xl border-slate-700 bg-slate-900">
-            <div><img class="h-[250px]" src={props.book.cover} alt={props.book.title} /></div>
-            <div class="text-lg text-slate-300 text-center font-bold px-4">{props.book.title}</div>
+        <div class="group relative w-44 flex flex-col gap-3 transition-transform hover:-translate-y-2 duration-300">
+            <div class="relative aspect-[2/3] w-full rounded-xl overflow-hidden shadow-xl shadow-black/40 ring-1 ring-white/10 group-hover:ring-sky-500/50 group-hover:shadow-sky-900/20 transition-all">
+                <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    src={props.book.cover}
+                    alt={props.book.title}
+                    loading="lazy"
+                />
+            </div>
+            <div class="text-center px-1">
+                <div class="text-sm font-medium text-slate-400 group-hover:text-sky-400 transition-colors line-clamp-2 leading-tight" title={props.book.title}>
+                    {props.book.title}
+                </div>
+            </div>
         </div>
     );
 };

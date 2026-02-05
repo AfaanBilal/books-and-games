@@ -12,8 +12,13 @@ import { Game } from "../games";
 
 const GameView: Component<{ game: Game }> = (props) => {
     return (
-        <div class="p-4 lg:p-8 border rounded-xl border-slate-700 bg-slate-800">
-            <div class="text-xl text-slate-300 text-center font-bold px-4">{props.game.name}</div>
+        <div class="group h-full flex items-center gap-5 p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:bg-slate-800 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-900/20 transition-all duration-300">
+            <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-slate-700/50 flex items-center justify-center group-hover:bg-gradient-to-br from-purple-600 to-blue-600 transition-all duration-300 shadow-inner">
+                <span class="text-2xl opacity-70 group-hover:opacity-100 text-purple-400 group-hover:text-white transition-colors">🎮</span>
+            </div>
+            <div class="font-semibold text-slate-200 group-hover:text-white transition-colors leading-tight">
+                {props.game.name}
+            </div>
         </div>
     );
 };
